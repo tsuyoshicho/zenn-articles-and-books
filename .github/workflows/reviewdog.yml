@@ -9,19 +9,35 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: true
-      - name: textlint-github-check
+      - name: textlint-github-check article
         uses: tsuyoshicho/action-textlint@v1
         if: github.event_name != 'pull_request'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-check
           level: info
-          textlint_flags: "articles/*.md books/*.md"
-      - name: textlint-github-pr-review
+          textlint_flags: "articles/**"
+      - name: textlint-github-check book
+        uses: tsuyoshicho/action-textlint@v1
+        if: github.event_name != 'pull_request'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-check
+          level: info
+          textlint_flags: "books/**"
+      - name: textlint-github-pr-review article
         uses: tsuyoshicho/action-textlint@v1
         if: github.event_name == 'pull_request'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.ACCESS_TOKEN }}
           reporter: github-pr-review
           level: info
-          textlint_flags: "articles/*.md books/*.md"
+          textlint_flags: "articles/**"
+      - name: textlint-github-pr-review book
+        uses: tsuyoshicho/action-textlint@v1
+        if: github.event_name == 'pull_request'
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          reporter: github-pr-review
+          level: info
+          textlint_flags: "books/**"
