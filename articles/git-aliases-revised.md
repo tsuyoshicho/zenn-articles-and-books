@@ -3,9 +3,11 @@ title: "Gitのaliasを晒す revised "
 emoji: "🐧"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['git']
-published: false
+published: true
 ---
 この記事は  [Gitのaliasを晒す - Qiita](https://qiita.com/tsuyoshi_cho/items/f615dbd4631957334ef3) を改訂したものです。
+
+----
 
 # gitのalias
 各所で提案されているaliasを収集、一部修正やら改良やらしたもの。
@@ -21,7 +23,7 @@ published: false
 
 ## alias定義
 
-```config:.gitconfig.aliases
+```gitconfig:.gitconfig.aliases
 # -*- coding: utf-8 -*-
 # vim:fenc=utf-8 ff=unix ft=gitconfig noexpandtab
 
