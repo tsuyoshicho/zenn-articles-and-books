@@ -15,11 +15,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-check
-          textlint_flags: "**/*.md"
+          textlint_flags: "articles/*.md books/*.md"
       - name: textlint-github-pr-review
         uses: tsuyoshicho/action-textlint@v1
         if: github.event_name == 'pull_request'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
-          textlint_flags: "**/*.md"
+          textlint_flags: "articles/*.md books/*.md"
