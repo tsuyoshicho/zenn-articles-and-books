@@ -1,0 +1,23 @@
+{
+  "name": "zenn-article",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsuyoshicho/zenn-article.git"
+  },
+  "keywords": [],
+  "author": "tsuyoshi_cho <Tsuyoshi.CHO+npm@Gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsuyoshicho/zenn-article/issues"
+  },
+  "homepage": "https://github.com/tsuyoshicho/zenn-article#readme",
+  "dependencies": {
+    "zenn-cli": "^0.1.20"
+  }
+}
