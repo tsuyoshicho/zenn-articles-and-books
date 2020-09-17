@@ -1,5 +1,5 @@
 ---
-title: "Gitのaliasを晒す revised "
+title: "Gitのaliasを晒す revised"
 emoji: "🐧"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['git']
@@ -420,7 +420,7 @@ published: true
 ## 注
 statusは以下の設定があり、untrackedを普段は見ないように定義している。
 
-```config:.gitconfig(部分)
+```gitconfig:.gitconfig(部分)
 [status]
         # http://qiita.com/tettekete/items/7019bf7d1bfa883d8549
         showuntrackedfiles = no
