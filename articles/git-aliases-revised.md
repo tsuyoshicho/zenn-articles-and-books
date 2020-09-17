@@ -5,11 +5,14 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['git']
 published: true
 ---
-この記事は  [Gitのaliasを晒す - Qiita](https://qiita.com/tsuyoshi_cho/items/f615dbd4631957334ef3) を改訂したものです。
+
+この記事は  [Gitのaliasを晒す - Qiita](https://qiita.com/tsuyoshi_cho/items/f615dbd4631957334ef3)
+を改訂したものです。
 
 ----
 
 # gitのalias
+
 各所で提案されているaliasを収集、一部修正やら改良やらしたもの。
 公開して更新を維持する方法がなかった(プライベートリポジトリでの運用のため)ので、適当なタイミングで公開することにする
 
@@ -418,6 +421,7 @@ published: true
 ```
 
 ## 注
+
 statusは以下の設定があり、untrackedを普段は見ないように定義している。
 
 ```gitconfig:.gitconfig(部分)
@@ -427,11 +431,14 @@ statusは以下の設定があり、untrackedを普段は見ないように定�
 ```
 
 ## 後記
+
 この記事での[gist](https://gist.github.com/tsuyoshicho/0a8610e87f209f5e86bc)を利用するって手はあるけど、ファイルメンテナンスをローカルでもgistでもできなくて、記事自体で書き換えが必要になるのは、ちょっと辛いな...
 
 ## 後記2
+
 Qiitaのgist連携が止りました。
 
 ## 後記3
+
 Zennへ移植改訂しました。
 
