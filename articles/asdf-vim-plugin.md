@@ -1,9 +1,9 @@
 ---
 title: "asdf プラグインの作成 : Vimの場合"
-emoji: ""
+emoji: "🛠"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [vim, asdf]
-published: false
+published: true
 ---
 
 この記事は [asdf プラグインの作成 : Vimの場合 - Qiita](https://qiita.com/tsuyoshi_cho/items/495f081117253f0b23bb) と同じものです。
