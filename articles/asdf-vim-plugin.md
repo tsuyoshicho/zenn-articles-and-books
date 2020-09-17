@@ -2,7 +2,7 @@
 title: "asdf プラグインの作成 : Vimの場合"
 emoji: "🛠"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: [vim, asdf]
+topics: ["vim", "asdf"]
 published: true
 ---
 
@@ -33,7 +33,7 @@ Vimはパッチバージョンの更新が頻繁で、リリースという明�
 * bin/install、bin/list-all というコマンド（基本シェルスクリプトだが）が入ったリポジトリを作る（これは最低限）
 * bin/list-all はどうにかやって、対象ツールのインストールとして対応するバージョンリストを出力する
 * bin/installは引数で上のバージョン、インストール先などの情報をもらうので、それをもってインストール処理を行う
-* `asdf plugin-install hoge <git htttps path>` でプラグインをインストールして使う
+* `asdf plugin-install hoge <git https path>` でプラグインをインストールして使う
 * asdf-pluginsへPRするには、
     * CIテストの追加、GitHub Acitonsならインストールテストをしてくれるactionが用意されている
     * CIテストがGreenであること
