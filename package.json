@@ -1,22 +1,25 @@
 {
-  "name": "zenn-article",
+  "name": "zenn-articles-and-books",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "new-article": "npx zenn new:article",
+    "new-book": "npx zenn new:book",
+    "preview": "npx zenn preview"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tsuyoshicho/zenn-article.git"
+    "url": "git+https://github.com/tsuyoshicho/zenn-articles-and-books.git"
   },
   "keywords": [],
   "author": "tsuyoshi_cho <Tsuyoshi.CHO+npm@Gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tsuyoshicho/zenn-article/issues"
+    "url": "https://github.com/tsuyoshicho/zenn-articles-and-books/issues"
   },
-  "homepage": "https://github.com/tsuyoshicho/zenn-article#readme",
+  "homepage": "https://github.com/tsuyoshicho/zenn-articles-and-books#readme",
   "dependencies": {
     "textlint": "^11.7.6",
     "textlint-rule-preset-ja-technical-writing": "^4.0.1",
