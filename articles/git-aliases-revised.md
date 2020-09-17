@@ -6,8 +6,7 @@ topics: ['git']
 published: true
 ---
 
-この記事は  [Gitのaliasを晒す - Qiita](https://qiita.com/tsuyoshi_cho/items/f615dbd4631957334ef3)
-を改訂したものです。
+この記事は  [Gitのaliasを晒す - Qiita](https://qiita.com/tsuyoshi_cho/items/f615dbd4631957334ef3) を改訂したものです。
 
 ----
 
