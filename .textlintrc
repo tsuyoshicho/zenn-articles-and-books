@@ -18,7 +18,7 @@
       "ja-no-redundant-expression": true,
       "no-unmatched-pair": true,
       "no-double-negative-ja": true,
-      "no-doubled-conjunctive-particle-ga": true,
+      "no-doubled-conjunctive-particle-ga": true
     }
   }
 }
