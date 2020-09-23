@@ -1,8 +1,10 @@
 {
   "name": "zenn-articles-and-books",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "zenn.dev contents",
+  "main": "",
+  "config": {
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "new-article": "npx zenn new:article",
@@ -13,9 +15,13 @@
     "type": "git",
     "url": "git+https://github.com/tsuyoshicho/zenn-articles-and-books.git"
   },
-  "keywords": [],
-  "author": "tsuyoshi_cho <Tsuyoshi.CHO+npm@Gmail.com>",
-  "license": "ISC",
+  "keywords": [
+    "tech",
+    "article",
+    "book"
+  ],
+  "author": "Tsuyoshi CHO <Tsuyoshi.CHO@Gmail.com>",
+  "license": "CC-BY-NC-SA-4.0",
   "bugs": {
     "url": "https://github.com/tsuyoshicho/zenn-articles-and-books/issues"
   },
