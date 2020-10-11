@@ -20,19 +20,35 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: textlint-github-check
+      - name: textlint-github-check (articles)
         uses: tsuyoshicho/action-textlint@v1
         if: github.event_name != 'pull_request'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-check
           level: info
-          textlint_flags: "books/** articles/**"
-      - name: textlint-github-pr-review
+          textlint_flags: "articles/**"
+      - name: textlint-github-check (books)
+        uses: tsuyoshicho/action-textlint@v1
+        if: github.event_name != 'pull_request'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-check
+          level: info
+          textlint_flags: "books/**"
+      - name: textlint-github-pr-review (articles)
         uses: tsuyoshicho/action-textlint@v1
         if: github.event_name == 'pull_request'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           level: info
-          textlint_flags: "books/** articles/**"
+          textlint_flags: "articles/**"
+      - name: textlint-github-pr-review (books)
+        uses: tsuyoshicho/action-textlint@v1
+        if: github.event_name == 'pull_request'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-review
+          level: info
+          textlint_flags: "books/**"
