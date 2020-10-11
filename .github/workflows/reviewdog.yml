@@ -9,35 +9,30 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: true
-      - name: textlint-github-check article
+      - name: Get npm cache directory
+        id: npm-cache
+        run: |
+          echo "::set-output name=dir::$(npm config get cache)"
+      - name: Check npm cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.npm-cache.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: textlint-github-check
         uses: tsuyoshicho/action-textlint@v1
         if: github.event_name != 'pull_request'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-check
           level: info
-          textlint_flags: "articles/**"
-      - name: textlint-github-check book
+          textlint_flags: "books/** articles/**"
+      - name: textlint-github-pr-review
         uses: tsuyoshicho/action-textlint@v1
-        if: github.event_name != 'pull_request'
+        if: github.event_name == 'pull_request'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-check
-          level: info
-          textlint_flags: "books/**"
-      - name: textlint-github-pr-review article
-        uses: tsuyoshicho/action-textlint@v1
-        if: github.event_name == 'pull_request'
-        with:
-          github_token: ${{ secrets.ACCESS_TOKEN }}
           reporter: github-pr-review
           level: info
-          textlint_flags: "articles/**"
-      - name: textlint-github-pr-review book
-        uses: tsuyoshicho/action-textlint@v1
-        if: github.event_name == 'pull_request'
-        with:
-          github_token: ${{ secrets.ACCESS_TOKEN }}
-          reporter: github-pr-review
-          level: info
-          textlint_flags: "books/**"
+          textlint_flags: "books/** articles/**"
