@@ -27,5 +27,13 @@
       "ja-no-space-between-full-width": false
     },
     "general-novel-style-ja": false
+  },
+  "filters": {
+    "allowlist": {
+      "allow": [
+        ":::",
+        "/:::details\\s.*/",
+      ]
+    }
   }
 }
