@@ -28,7 +28,8 @@ v2 系でこれに対応
 やった内容
 
 例
-
+https://github.com/tsuyoshicho/action-test-repo/pull/3
+[![Image from Gyazo](https://i.gyazo.com/77649ba3fb4087667bad2e0079404df6.png)](https://gyazo.com/77649ba3fb4087667bad2e0079404df6)
 
 利点
 
