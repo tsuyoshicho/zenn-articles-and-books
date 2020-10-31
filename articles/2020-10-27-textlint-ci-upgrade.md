@@ -9,7 +9,7 @@ published: false
 
 どうも、[action-textlint](https://github.com/tsuyoshicho/action-textlint) を作りました作者でございます。 いくつかの記事 ([1](https://zenn.dev/serima/articles/4dac7baf0b9377b0b58b), [2](https://zenn.dev/srz_zumix/articles/cb21af1a86fc01cb829d), [3](https://zenn.dev/srz_zumix/articles/9404b45e22cdf0f65ddd)) でも利用例を出していただいてうれしい限りです。
 
-今回 v2 系へのアップデートと、それに伴う機能拡充があったので、どんなことをしたのかも含めて記事にします。
+今回v2系へのアップデートと、それに伴う機能拡充があったので、どんなことをしたのかも含めて記事にします。
 
 ## What is textlint
 
@@ -113,4 +113,3 @@ reviewdogへ与えるパラメータについて、これらと同等に設定�
 ただ、無条件にサジェストも出しているので、これをオプション制御にするかなど、考えるべき所はまだまだあります。
 
 これからもこのツールをよろしくお願いします。
-
