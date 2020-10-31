@@ -42,7 +42,7 @@ action-textlint は reviewdog というツールを利用して GitHub のコミ
 
 - [reviewdog/reviewdog: 🐶 Automated code review tool integrated with any code analysis tools regardless of programming language](https://github.com/reviewdog/reviewdog)
 
-先日、この reviewdog が [v0.11.0](https://github.com/reviewdog/reviewdog/releases/tag/v0.11.0)
+先日、このreviewdogが [v0.11.0](https://github.com/reviewdog/reviewdog/releases/tag/v0.11.0)
 へバージョンアップしました。
 変更の内容はリンク先を見ていただくとして、重要なものの1つに「差分による修正サジェストに対応」があります。
 
