@@ -94,8 +94,8 @@ reviewdogへ与えるパラメータについて、これらと同等になる�
 
 ### hello suggestion
 
-そして目玉ですが、textlint が提供する自動修正について、PRでのサジェストとして出す機能を入れています。
-これは reviewdog チームが提供している汎用の差分サジェストサポート Action
+そして目玉ですが、textlintが提供する自動修まさについて、PRでのサジェストとして出す機能を入れています。
+これはreviewdogチームが提供している汎用の差分サジェストサポートAction
 [reviewdog/action-suggester](https://github.com/reviewdog/action-suggester) を参考にして出すようにしました。
 
 例:
