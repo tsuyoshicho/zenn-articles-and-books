@@ -1,15 +1,18 @@
 ---
 title: "GitHub Action textlint ツールでの reviewdog キャッチアップ : 修正サジェスト"
 emoji: "🐶"
-type: "tech" # tech: 技術記事 / idea: アイデア
+type: "tech" 
 topics: ['GitHub', 'GitHubAction', 'textlint', 'reviewdog']
 published: false
 ---
+# action-textlint v2 available
 
-# [action-textlint](https://github.com/tsuyoshicho/action-textlint) v2 available
-
-どうも、action-textlint を作りました作者でございます。
-いくつかの記事 ([1](https://zenn.dev/serima/articles/4dac7baf0b9377b0b58b), [2](https://zenn.dev/srz_zumix/articles/cb21af1a86fc01cb829d), [3](https://zenn.dev/srz_zumix/articles/9404b45e22cdf0f65ddd)) でも利用例を出していただいて嬉しい限りです。
+どうも、[action-textlint](https://github.com/tsuyoshicho/action-textlint) を作りました作者でございます。
+いくつかの記事
+([1](https://zenn.dev/serima/articles/4dac7baf0b9377b0b58b),
+[2](https://zenn.dev/srz_zumix/articles/cb21af1a86fc01cb829d),
+[3](https://zenn.dev/srz_zumix/articles/9404b45e22cdf0f65ddd))
+でも利用例を出していただいて嬉しい限りです。
 
 今回 v2 系へのアップデートと、それに伴う機能拡充があったので、どんなことをしたのかも含めて記事にします。
 
@@ -17,11 +20,17 @@ published: false
 
 改めてちょっとだけ textlint について紹介。
 
-[textlint](https://github.com/textlint/textlint) は npm パッケージとして提供されている、テキストドキュメントを lint (プログラミング方
-言かな? 検査・検証)できるツールです。
+[textlint](https://github.com/textlint/textlint)
+は npm パッケージとして提供されている、テキストドキュメントを lint (プログラミング方言かな?
+検査・検証)できるツールです。
 
 プラグインでの拡張、ruleやその集合のpresetを導入することで柔軟な検査が行えます。
 逆になにも入れてないときは、なにもしないですが。
+
+## what is reviewdog
+
+reviewdog にも大変お世話になっているので、紹介を……。
+と思うところですが、下で更新を説明していますので、そこで。
 
 ## what is action-textlint
 
@@ -33,7 +42,8 @@ action-textlint は reviewdog というツールを利用して GitHub のコミ
 
 - [reviewdog/reviewdog: 🐶 Automated code review tool integrated with any code analysis tools regardless of programming language](https://github.com/reviewdog/reviewdog)
 
-先日、この reviewdog が [v0.11.0](https://github.com/reviewdog/reviewdog/releases/tag/v0.11.0) へバージョンアップしました。
+先日、この reviewdog が [v0.11.0](https://github.com/reviewdog/reviewdog/releases/tag/v0.11.0)
+へバージョンアップしました。
 変更の内容はリンク先を見ていただくとして、重要なものの1つに「差分による修正サジェストに対応」があります。
 
 ご承知のように、GitHubのPRでは、レビューワーによる変更方法のサジェストができ、一部ツールでも出してくれるものがあります。
@@ -60,7 +70,8 @@ action-textlint は reviewdog というツールを利用して GitHub のコミ
 ## changelog
 
 変更ですが、これらについて v2 系として対応しました。
-最新は [v2.2.0](https://github.com/tsuyoshicho/action-textlint/releases/tag/v2.2.0) です。
+最新は [v2.2.0](https://github.com/tsuyoshicho/action-textlint/releases/tag/v2.2.0)
+です。
 
 やった内容です。
 
@@ -84,9 +95,11 @@ reviewdogへ与えるパラメータについて、これらと同等になる�
 ### hello suggestion
 
 そして目玉ですが、textlint が提供する自動修正について、PRでのサジェストとして出す機能を入れています。
-これは reviewdog チームが提供している汎用の差分サジェストサポート Action [reviewdog/action-suggester](https://github.com/reviewdog/action-suggester) を参考にして出すようにしました。
+これは reviewdog チームが提供している汎用の差分サジェストサポート Action
+[reviewdog/action-suggester](https://github.com/reviewdog/action-suggester) を参考にして出すようにしました。
 
 例:
+
 - [テスト実行](https://github.com/tsuyoshicho/action-test-repo/pull/3)での結果キャプチャ
   [![Image from Gyazo](https://i.gyazo.com/77649ba3fb4087667bad2e0079404df6.png)](https://gyazo.com/77649ba3fb4087667bad2e0079404df6)
 
