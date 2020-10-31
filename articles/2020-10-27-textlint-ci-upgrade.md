@@ -89,7 +89,7 @@ action-textlint は reviewdog というツールを利用して GitHub のコミ
 
 ### treat more options
 
-また、これらと合せる形で、 reviewdog プロジェクトリポジトリ管理の GitHub Action (eslintを掛けるものなど多数あります) の内容をパク……もとい参考にさせていただきました。
+また、これらと合せる形で、 reviewdogプロジェクトリポジトリ管理のGitHub Actions (eslintを掛けるものなど多数あります) の内容をパク……もとい参考にさせていただきました。
 reviewdogへ与えるパラメータについて、これらと同等になるように修正しています。
 
 ### hello suggestion
