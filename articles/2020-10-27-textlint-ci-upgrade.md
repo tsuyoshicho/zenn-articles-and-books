@@ -34,7 +34,7 @@ reviewdogにもたいへんお世話になっているので、紹介を……�
 
 ## what is action-textlint
 
-そして action-textlint ですが、これを GitHub Action として実行し、結果をコミット/PRに付与できるというものです。
+そしてaction-textlintですが、これをGitHub Actionsとして実行し、結果をコミット/PRに付与できるというものです。
 
 ## reviewdog support suggest now
 
