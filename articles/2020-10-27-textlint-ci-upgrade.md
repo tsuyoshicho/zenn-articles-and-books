@@ -51,7 +51,7 @@ action-textlintはtextlintの結果をreviewdogというツールを利用して
 
 これも先日ですが、Node.js 15およびそれに同梱のnpm 7がリリースされています。
 
-これ自体はGitHub Actionsとは直接は関係しませんが(環境が固定的(ubuntu-latestが[20.04](https://github.blog/changelog/2020-10-29-github-actions-ubuntu-latest-workflows-will-use-ubuntu-20-04/)になりますが)なので、意図して使わなければ使うことがない)、その中に
+これ自体はGitHub Actionsとは直接は関係しませんが(環境が固定的(ubuntu-latestが[20.04](https://github.blog/changelog/2020-10-29-github-actions-ubuntu-latest-workflows-will-use-ubuntu-20-04/)になりますが)ですので、意図して使わなければ使うことがない)、その中に
 
 > その他、npxでの破壊的変更
 
