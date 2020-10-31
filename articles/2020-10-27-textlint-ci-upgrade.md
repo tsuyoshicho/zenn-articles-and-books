@@ -69,7 +69,7 @@ action-textlint は reviewdog というツールを利用して GitHub のコミ
 
 ## changelog
 
-変更ですが、これらについて v2 系として対応しました。
+変更ですが、これらについてv2系として対応しました。
 最新は [v2.2.0](https://github.com/tsuyoshicho/action-textlint/releases/tag/v2.2.0)
 です。
 
