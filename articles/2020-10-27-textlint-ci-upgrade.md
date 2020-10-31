@@ -12,7 +12,7 @@ published: false
 ([1](https://zenn.dev/serima/articles/4dac7baf0b9377b0b58b),
 [2](https://zenn.dev/srz_zumix/articles/cb21af1a86fc01cb829d),
 [3](https://zenn.dev/srz_zumix/articles/9404b45e22cdf0f65ddd))
-でも利用例を出していただいて嬉しい限りです。
+でも利用例を出していただいてうれしい限りです。
 
 今回 v2 系へのアップデートと、それに伴う機能拡充があったので、どんなことをしたのかも含めて記事にします。
 
@@ -104,4 +104,3 @@ reviewdogへ与えるパラメータについて、これらと同等になる�
   [![Image from Gyazo](https://i.gyazo.com/77649ba3fb4087667bad2e0079404df6.png)](https://gyazo.com/77649ba3fb4087667bad2e0079404df6)
 
 利点としては、ここまでくれば、手元で `npm ci && npm run lint` などしなくても、textlintでの修正結果までGitHub上だけで受け取れることでしょうか。
-
