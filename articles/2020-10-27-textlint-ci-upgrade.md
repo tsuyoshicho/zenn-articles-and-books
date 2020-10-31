@@ -21,7 +21,7 @@ published: false
 改めてちょっとだけ textlint について紹介。
 
 [textlint](https://github.com/textlint/textlint)
-は npm パッケージとして提供されている、テキストドキュメントを lint (プログラミング方言かな?
+はnpmパッケージとして提供されている、テキストドキュメントをlint (プログラミング方言かな?
 検査・検証)できるツールです。
 
 プラグインでの拡張、ruleやその集合のpresetを導入することで柔軟な検査が行えます。
