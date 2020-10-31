@@ -49,7 +49,7 @@ action-textlintはtextlintの結果をreviewdogというツールを利用して
 - [Node\.js v15 の主な変更点 \- 別にしんどくないブログ](https://shisama.hatenablog.com/entry/2020/10/21/004612)
 - [npm v7の主な変更点まとめ \| watilde's blog](https://blog.watilde.com/2020/10/14/npm-v7%E3%81%AE%E4%B8%BB%E3%81%AA%E5%A4%89%E6%9B%B4%E7%82%B9%E3%81%BE%E3%81%A8%E3%82%81/)
 
-これも先日ですが、Node.js 15 およびそれに同梱の npm 7 がリリースされています。
+これも先日ですが、Node.js 15およびそれに同梱のnpm 7がリリースされています。
 
 これ自体は GitHub Action とは直接は関係しませんが(環境が固定的(ubuntu-latestが[20.04](https://github.blog/changelog/2020-10-29-github-actions-ubuntu-latest-workflows-will-use-ubuntu-20-04/)になりますが)なので、意図して使わなければ使うことがない)、その中に
 
