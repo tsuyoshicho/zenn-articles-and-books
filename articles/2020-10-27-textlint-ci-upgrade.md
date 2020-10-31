@@ -7,7 +7,7 @@ published: false
 ---
 # action-textlint v2 available
 
-どうも、[action-textlint](https://github.com/tsuyoshicho/action-textlint) を作りました作者でございます。 いくつかの記事 ([1](https://zenn.dev/serima/articles/4dac7baf0b9377b0b58b), [2](https://zenn.dev/srz_zumix/articles/cb21af1a86fc01cb829d), [3](https://zenn.dev/srz_zumix/articles/9404b45e22cdf0f65ddd)) でも利用例を出していただいてうれしい限りです。
+どうも、[action-textlint](https://github.com/tsuyoshicho/action-textlint)を作りました作者でございます。 いくつかの記事 ([1](https://zenn.dev/serima/articles/4dac7baf0b9377b0b58b), [2](https://zenn.dev/srz_zumix/articles/cb21af1a86fc01cb829d), [3](https://zenn.dev/srz_zumix/articles/9404b45e22cdf0f65ddd))でも利用例を出していただいてうれしい限りです。
 
 今回v2系へのアップデートと、それに伴う機能拡充があったので、どんなことをしたのかも含めて記事にします。
 
@@ -16,7 +16,7 @@ published: false
 あらためてちょっとだけ[textlint](https://github.com/textlint/textlint)について紹介。
 
 textlintはnpmパッケージとして提供されている、テキストドキュメントをlint(プログラ
-ミング方言かな? 検査・検証)できるツールです。
+ミング方言かな、検査・検証)できるツールです。
 
 プラグインでの拡張、ruleやその集合のpresetを導入することで柔軟な検査が行えます。
 逆になにも入れてないときは、なにもしないですが。
@@ -37,7 +37,7 @@ action-textlintはtextlintの結果をreviewdogというツールを利用して
 先日、このreviewdogが[v0.11.0](https://github.com/reviewdog/reviewdog/releases/tag/v0.11.0)へバージョンアップしました。
 変更の内容はリンク先を見ていただくとして、重要なものの1つに「差分による修正サジェストに対応」があります。
 
-ご承知のように、GitHubのPRでは、レビュアーよる変更方法のサジェストができ、一部ツールでも出してくれるものがあります。
+ご承知のように、GitHubのPRではレビュアーよる変更方法のサジェストができ、一部ツールでも出してくれるものがあります。
 今回のreviewdogの更新によって、通常の指摘内容より拡張された新フォーマットのrdjson、もしくは差分のdiff形式での修正サジェストをPRに出せるようになりました。
 
 後述しますが、今回これに対応しています。
@@ -51,7 +51,7 @@ action-textlintはtextlintの結果をreviewdogというツールを利用して
 
 これも先日ですが、Node.js 15およびそれに同梱のnpm 7がリリースされています。
 
-これ自体は GitHub Action とは直接は関係しませんが(環境が固定的(ubuntu-latestが[20.04](https://github.blog/changelog/2020-10-29-github-actions-ubuntu-latest-workflows-will-use-ubuntu-20-04/)になりますが)なので、意図して使わなければ使うことがない)、その中に
+これ自体はGitHub Actionsとは直接は関係しませんが(環境が固定的(ubuntu-latestが[20.04](https://github.blog/changelog/2020-10-29-github-actions-ubuntu-latest-workflows-will-use-ubuntu-20-04/)になりますが)なので、意図して使わなければ使うことがない)、その中に
 
 > その他、npxでの破壊的変更
 
@@ -85,7 +85,7 @@ reviewdogへ与えるパラメータについて、これらと同等に設定�
 
 ### Hello suggestion
 
-そして目玉ですが、textlintが提供する自動修正の結果にもとづいて、PRでのサジェストとして出す機能を入れています。
+そして目玉ですが、textlintが提供する自動修正の結果に基いて、PRでのサジェストとして出す機能を入れています。
 これはreviewdogチームが提供している汎用の差分サジェストサポートAction、[reviewdog/action-suggester](https://github.com/reviewdog/action-suggester)を参考にして出すようにしました。
 
 実行例:
