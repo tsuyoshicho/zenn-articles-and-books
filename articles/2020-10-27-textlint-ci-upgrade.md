@@ -13,7 +13,7 @@ published: false
 
 ## What is textlint
 
-改めてちょっとだけ[textlint](https://github.com/textlint/textlint)について紹介。
+あらためてちょっとだけ[textlint](https://github.com/textlint/textlint)について紹介。
 
 textlintはnpmパッケージとして提供されている、テキストドキュメントをlint(プログラ
 ミング方言かな? 検査・検証)できるツールです。
