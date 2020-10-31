@@ -29,7 +29,7 @@ published: false
 
 ## what is reviewdog
 
-reviewdog にも大変お世話になっているので、紹介を……。
+reviewdogにもたいへんお世話になっているので、紹介を……。
 と思うところですが、下で更新を説明していますので、そこで。
 
 ## what is action-textlint
