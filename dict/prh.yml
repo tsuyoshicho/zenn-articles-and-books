@@ -7,3 +7,11 @@ imports:
   - ./prh-rules/media/WEB+DB_PRESS.yml
   - ./prh-rules/languages/ja/typo.yml
 
+# 表記ゆれについて、どんどん自前で足していく
+rules:
+  - expected: GitHub
+    pattern:  /\bGithub\b|\bgithub\b/
+  - expected: GitHub Actions
+    pattern:  /\bGitHub Action\b/
+  - expected: Node.js
+    pattern:  /\bnode.js\b|\bnode\b/
