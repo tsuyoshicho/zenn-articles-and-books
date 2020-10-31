@@ -1,8 +1,8 @@
 ---
-title: "GitHub Action textlint ツールでの reviewdog キャッチアップ : 修正サジェスト"
+title: "GitHub Actions textlint ツールでの reviewdog キャッチアップ : 修正サジェスト"
 emoji: "🐶"
 type: "tech" 
-topics: ['GitHub', 'GitHubAction', 'textlint', 'reviewdog']
+topics: ['GitHub', 'GitHubActions', 'textlint', 'reviewdog']
 published: true
 ---
 # action-textlint v2 available
@@ -86,7 +86,7 @@ reviewdogへ与えるパラメータについて、これらと同等に設定�
 ### Hello suggestion
 
 そして目玉ですが、textlintが提供する自動修正の結果に基づいて、PRでのサジェストとして出す機能を入れています。
-これはreviewdogチームが提供している汎用の差分サジェストサポートAction、[reviewdog/action-suggester](https://github.com/reviewdog/action-suggester)を参考にして出すようにしました。
+これはreviewdogチームが提供している汎用の差分サジェストサポートaction、[reviewdog/action-suggester](https://github.com/reviewdog/action-suggester)を参考にして出すようにしました。
 
 実行例:
 
