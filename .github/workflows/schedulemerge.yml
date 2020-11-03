@@ -1,0 +1,21 @@
+name: Schedule Merge
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+  schedule:
+    - cron: '*/20 * * * *'
+      # Every 20 minutes every hour
+jobs:
+  schedulemerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Schedule check
+        uses: gr2m/merge-schedule-action@v1.2.4
+        with:
+          merge_method: squash
+            # merge, squash or rebase.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
