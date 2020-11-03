@@ -26,5 +26,6 @@ TODO:活動履歴の抽出
 - https://github.com/tsuyoshicho/vim-efm-langserver-settings
 - https://github.com/tsuyoshicho/lightline-lsp
 - https://github.com/tsuyoshicho/vim-fg
+- https://github.com/tsuyoshicho/asdf-vim
 
 ## 詳細
