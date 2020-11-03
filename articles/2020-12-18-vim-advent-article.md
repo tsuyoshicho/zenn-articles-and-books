@@ -23,7 +23,8 @@ published: false
 
 TODO:活動履歴の抽出
 
-- a
-- b
+- https://github.com/tsuyoshicho/vim-efm-langserver-settings
+- https://github.com/tsuyoshicho/lightline-lsp
+- https://github.com/tsuyoshicho/vim-fg
 
 ## 詳細
