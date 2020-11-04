@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Schedule check
-        uses: gr2m/merge-schedule-action@v1.2.4
+        uses: gr2m/merge-schedule-action@v1.x
         with:
           merge_method: squash
             # merge, squash or rebase.
