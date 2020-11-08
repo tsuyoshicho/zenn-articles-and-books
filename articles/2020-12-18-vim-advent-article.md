@@ -1,5 +1,5 @@
 ---
-title: "2020 Vim アドベンド: Vim関係だけどVimではない活動"
+title: "2020 Vim アドベンド day 18: 今年のVim関係とそれ以外も含めた活動"
 emoji: "🎅"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['vim']
@@ -11,21 +11,31 @@ published: false
 
 何を書こうか悩みましたが、2020年のVim関係の活動をまとめてそこから何か抽出しよう、と考えました。
 
-……ただ、思い返す限りだと、メインがVimという活動は今年は弱めでした。
-
 ## 今年のVim関係だけどVimじゃない活動の総括
 
-これはいかん、ということで自分のGitHubの履歴をたどり、Vimに関係ありそうなところを探します。
-
-ここから、「こういうのでもVimでの作業の改善になる」「こういうことからOSSへのコントリビュートになる」みたいなところをエッセンスとして抽出してみます。
+それ以外にも関係する活動が多少あったので、それも合わせて書きます。
 
 ## 活動内容
 
-TODO:活動履歴の抽出
-
-- https://github.com/tsuyoshicho/vim-efm-langserver-settings
-- https://github.com/tsuyoshicho/lightline-lsp
-- https://github.com/tsuyoshicho/vim-fg
-- https://github.com/tsuyoshicho/asdf-vim
+- <https://github.com/tsuyoshicho/vim-efm-langserver-settings> 作成
+- <https://github.com/tsuyoshicho/lightline-lsp> 作成
+- <https://github.com/tsuyoshicho/vim-fg> 作成
+- <https://github.com/tsuyoshicho/asdf-vim> 作成
 
 ## 詳細
+
+### vim-efm-langserver-settings
+
+[efm-langserver](https://github.com/mattn/efm-langserver)の
+「lintツールをlanguage serverにしてしまう」という汎用性の良さと、
+[vim-lsp-settings](https://github.com/mattn/vim-lsp-settings)による
+[lsp](https://microsoft.github.io/language-server-protocol/)
+という(そのころはまだ敷居が高かった)ものの簡便化のよさに感激して作りました。
+(どちらも作者は[mattn](https://zenn.dev/mattn)さん)
+vim-lsp-settingsを真似てツールが使えるようなってさえいれば、
+zero configで利用できるようにしたのがポイント。
+
+### vim プラグインとしての工夫: vim-efm-langserver-settings
+
+to be continued
+
