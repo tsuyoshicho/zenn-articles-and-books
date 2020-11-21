@@ -13,6 +13,7 @@
     },
     "preset-japanese": false,
     "preset-ja-technical-writing": {
+      "sentence-length": false,
       "max-ten": {
         "max": 3
       },
