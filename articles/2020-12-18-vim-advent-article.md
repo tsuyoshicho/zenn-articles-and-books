@@ -1,8 +1,8 @@
 ---
-title: "2020 Vim アドベンド day 18: 今年のVim関係とそれ以外も含めた活動"
+title: "2020 Vim アドベンド day 18: 今年のVim関係とそれ以外も含めた活動のエッセンス"
 emoji: "🎅"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ['vim']
+topics: ['vim', 'tips', 'advent']
 published: false
 ---
 この記事は[Vim Advent Calendar 2020](https://qiita.com/advent-calendar/2020/vim)の18日目の記事です。
@@ -54,30 +54,30 @@ after
 ### lightline-lsp
 
 小物プラグイン。
-vim-lspから(一部非公開の関数を使って)lspの状態を取得し、[lightline](https://github.com/itchyny/lightline.vim)に表示するためのコンポーネントを定義する
-プラグイン。
+vim-lspから(一部非公開の関数を使って)lspの状態を取得し、[lightline](https://github.com/itchyny/lightline.vim)に表示するためのコンポーネントを定義するプラグイン。
 
-[maximbaz/lightline-ale](https://github.com/maximbaz/lightline-ale)というものを元に作成、あまり特別なことはしていないので、キャプチャを載せるにとどめる。
+[maximbaz/lightline-ale](https://github.com/maximbaz/lightline-ale)というものを元に作成、あまり特別なことはしていないので、キャプチャを載せるにとどめます。
 
 [![lightline-lsp : Image from Gyazo](https://i.gyazo.com/68933419ed2704286cd8d4fe39f2b6f3.png)](https://gyazo.com/68933419ed2704286cd8d4fe39f2b6f3)
 
-efm-langserverとその左に状態インジケータがそれ。
+efm-langserverとその左の状態インジケータがそれです。
 
 ### vim-fg
 
 検索補助プラグイン。
-[yegappan/grep](https://github.com/yegappan/grep)からインスパイアされたもの、非同期でgrep/pt/agほかの実行をハンドリングする。
+[yegappan/grep](https://github.com/yegappan/grep)からインスパイアされたもので、非同期でgrep/pt/agほかの実行をハンドリングして、結果をquickfixへ出力します。
 
-上のでも期待した動きはするが、自分の環境とうまく合わないなどもあったのでこうしてある。
+上のでも期待した動きはしますが、自分の環境とうまく合わないなどもあったので最終的には自作することになりました。
 
 ### Vim プラグインとしての工夫: vim-fg 
 
 非同期に外部プロセスをハンドリングするのに[vim-jp/vital.vim](https://github.com/vim-jp/vital.vim)そして[lambdalisue/vital-Whisky](https://github.com/lambdalisue/vital-Whisky)による
-Job(vim/neovimのjobの抽象化)とPromiseを利用している。
+Job(vim/neovimのjobの抽象化)とPromiseを利用しています。
 
-また、このプラグインも上の各種grepperを動かすための設定を抱えています。そしてその設定はtomlで書かれているが、これもvitalのライブラリとそれによる設定ファイル同梱機能が活躍(一部予定)。
+また、このプラグインも上の各種grepperを動かすための設定を抱えています。そしてその設定はtomlで書かれていますが、これもvitalのライブラリとそれによる設定ファイル同梱機能が活躍(一部予定)。
 
-いつか、この設定部分を独立したライブラリにしたい。
+まだまだ作りかけだが、通常生活では満足する程度には動作します。
+いつか、この設定部分を独立したライブラリにしたいのですね。
 
 ### asdf-vim
 
@@ -85,23 +85,23 @@ Job(vim/neovimのjobの抽象化)とPromiseを利用している。
 
 ### vital-codec Math.Fraction
 
-今後こうしたいなー、という想定があるのだが説明すると長いので省略。
-ただ、その中で、「分数をうまく扱いたい」というのが出てきた。
+今後こうしたいなー、というプラグインの構想(といっても他の人の作ったものが開発停止になり、そのうち自分用にforkするだろうというもの)があるのだが説明すると長いので省略。
+ただ、その中で、「分数をうまく扱いたい」というのが出てきました。
 
-そういう機能なのでvitalの自分モジュールとして作成することにした。
+そういう機能なのでvitalの自分モジュールとして作成することにしました。
 
-プログラミングでの分数・有理数(Rational, Fraction)の扱いについてはいろいろあるが、今回はPythonの[fractions](https://docs.python.org/ja/3/library/fractions.html)を参照して作成。
-また、その動作を考えると、文字からの数値への変換とその桁が十分にある精度のものである必要があるので、これもvital.vimのData.BigNum[^1][^2]が使えるので、これを利用。
+プログラミングでの分数・有理数(Rational, Fraction)の扱いについてはいろいろありますが、今回はPythonの[fractions](https://docs.python.org/ja/3/library/fractions.html)を参照して作成しました。
+また、その動作を考えると、文字からの数値への変換とその桁が十分にある精度のものである必要があるので、これもvital.vimのData.BigNum[^1][^2]が使えるので、これを利用しています。
 
 ### Vim プラグインとしての工夫: vital-codec Math.Fraction 
 
-実はそこまでのことはしていないので、これ自体はvitalのモジュールを作る例としよいのではないかと思っている。
-ので、ライブラリに切り出したい、みたいに考えている人が作業する際の参考になれば幸いです。
+実はそこまでのことはしていないので、これ自体はvitalのモジュールを作る例としてよい例になるのではないかと思っている。[vital-codec/Fraction.txt at master · tsuyoshicho/vital-codec](https://github.com/tsuyoshicho/vital-codec/blob/master/doc/vital/Math/Fraction.txt)
+ですので、小さめのライブラリを作りたい、とかライブラリに切り出したいみたいに考えている人が作業する際の参考になれば幸いです。
 
 ## まとめ
 
-当初は記事のネタもなく、「今年は大したことしてないなー」と思ったものだが、案外活動しているものだ。
-これからもいろいろと頑張りたいと思う。
+当初は記事のネタもなく、「今年は大したことしてないなー」と思ったものだが、案外活動しているようでした。
+これからもいろいろと頑張りたいと思います。
 
 ## 注釈
 
