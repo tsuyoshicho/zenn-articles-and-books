@@ -39,7 +39,7 @@ vim-lsp-settingsを真似てツールが使えるようなってさえいれば�
 
 複数のプラグインへの設定追加には、
 
-```
+```text
 after
  + plugin
    + coc
@@ -66,16 +66,16 @@ efm-langserverとその左に状態インジケータがそれ。
 ### vim-fg
 
 検索補助プラグイン。
-[yegappan/grep](https://github.com/yegappan/grep)からインスパイアされたもの、非同期でGrep/Pt/Ag他の実行をハンドリングする。
+[yegappan/grep](https://github.com/yegappan/grep)からインスパイアされたもの、非同期でgrep/pt/agほかの実行をハンドリングする。
 
-上のでも期待した動きはするが、自分の環境とうまくあわないなどもあったのでこうしてある。
+上のでも期待した動きはするが、自分の環境とうまく合わないなどもあったのでこうしてある。
 
 ### Vim プラグインとしての工夫: vim-fg 
 
 非同期に外部プロセスをハンドリングするのに[vim-jp/vital.vim](https://github.com/vim-jp/vital.vim)そして[lambdalisue/vital-Whisky](https://github.com/lambdalisue/vital-Whisky)による
 Job(vim/neovimのjobの抽象化)とPromiseを利用している。
 
-また、これも上の各種grepperを動かすための設定を抱えており、それはtomlで書かれているが、これもvitalのライブラリとそれによる設定ファイル同梱機能が活躍(一部予定)。
+また、このプラグインも上の各種grepperを動かすための設定を抱えています。そしてその設定はtomlで書かれているが、これもvitalのライブラリとそれによる設定ファイル同梱機能が活躍(一部予定)。
 
 いつか、この設定部分を独立したライブラリにしたい。
 
@@ -95,7 +95,7 @@ Job(vim/neovimのjobの抽象化)とPromiseを利用している。
 
 ### Vim プラグインとしての工夫: vital-codec Math.Fraction 
 
-実はそこまでのことはしていないので、これ自体はvitalのモジュールを作る例としていいんじゃないかと思っている。
+実はそこまでのことはしていないので、これ自体はvitalのモジュールを作る例としよいのではないかと思っている。
 ので、ライブラリに切り出したい、みたいに考えている人が作業する際の参考になれば幸いです。
 
 ## まとめ
