@@ -34,7 +34,7 @@ vim-lsp-settingsを真似てツールが使えるようなってさえいれば�
 
 ### Vim プラグインとしての工夫: vim-efm-langserver-settings
 
-プラグインしては、導入するだけで動作する、vim-lsp/ale/cocに対応というのがあります。
+プラグインしては、導入するだけで動作する、ale/coc/vim-lspに対応というのがあります。
 おかげか、自分的には利用者が多いプラグイン(の様子)。
 
 複数のプラグインへの設定追加には、
@@ -42,8 +42,8 @@ vim-lsp-settingsを真似てツールが使えるようなってさえいれば�
 ```text
 after
  + plugin
-   + coc
    + ale
+   + coc
    + lsp
 ```
 
@@ -72,11 +72,11 @@ efm-langserverとその左の状態インジケータがそれです。
 ### Vim プラグインとしての工夫: vim-fg 
 
 非同期に外部プロセスをハンドリングするのに[vim-jp/vital.vim](https://github.com/vim-jp/vital.vim)そして[lambdalisue/vital-Whisky](https://github.com/lambdalisue/vital-Whisky)による
-Job(vim/neovimのjobの抽象化)とPromiseを利用しています。
+Job(vim/neovimのjobの抽象化)[^1]とPromise[^2]を利用しています。
 
 また、このプラグインも上の各種grepperを動かすための設定を抱えています。そしてその設定はtomlで書かれていますが、これもvitalのライブラリとそれによる設定ファイル同梱機能が活躍(一部予定)。
 
-まだまだ作りかけだが、通常生活では満足する程度には動作します。
+まだまだ作りかけですが、通常生活では満足する程度には動作します。
 いつか、この設定部分を独立したライブラリにしたいのですね。
 
 ### asdf-vim
@@ -85,18 +85,28 @@ Job(vim/neovimのjobの抽象化)とPromiseを利用しています。
 
 ### vital-codec Math.Fraction
 
-今後こうしたいなー、というプラグインの構想(といっても他の人の作ったものが開発停止になり、そのうち自分用にforkするだろうというもの)があるのだが説明すると長いので省略。
+今後こうしたいなー、というプラグインの構想(といっても、他の人の作ったものが開発停止になり、そのうち自分用にforkするだろうというもの)があるのだが詳細を説明するとなると長いので省略。
 ただ、その中で、「分数をうまく扱いたい」というのが出てきました。
 
 そういう機能なのでvitalの自分モジュールとして作成することにしました。
 
-プログラミングでの分数・有理数(Rational, Fraction)の扱いについてはいろいろありますが、今回はPythonの[fractions](https://docs.python.org/ja/3/library/fractions.html)を参照して作成しました。
-また、その動作を考えると、文字からの数値への変換とその桁が十分にある精度のものである必要があるので、これもvital.vimのData.BigNum[^1][^2]が使えるので、これを利用しています。
+プログラミングでの、分数・有理数(Rational, Fraction)の扱いについてはいろいろあります。今回はPythonの[fractions](https://docs.python.org/ja/3/library/fractions.html)を参照して作成しました。
+またその動作を考えると、文字からの数値への変換とその桁が十分に精度がある必要があります。これについてはvital.vimのData.BigNum[^3][^4]が使えるので、これを利用しています。
 
 ### Vim プラグインとしての工夫: vital-codec Math.Fraction 
 
-実はそこまでのことはしていないので、これ自体はvitalのモジュールを作る例としてよい例になるのではないかと思っている。[vital-codec/Fraction.txt at master · tsuyoshicho/vital-codec](https://github.com/tsuyoshicho/vital-codec/blob/master/doc/vital/Math/Fraction.txt)
-ですので、小さめのライブラリを作りたい、とかライブラリに切り出したいみたいに考えている人が作業する際の参考になれば幸いです。
+実はそこまでのことはしていないので、これ自体はvitalのモジュールを作る例としてよい例になるのではないかと思っています。[vital-codec/Fraction.txt at master · tsuyoshicho/vital-codec](https://github.com/tsuyoshicho/vital-codec/blob/master/doc/vital/Math/Fraction.txt)
+ですので、小さめのライブラリを作りたい、とかライブラリに切り出したいと考えている人が作業する際の参考になれば幸いです。
+
+一応の工夫として
+
+- モジュールが生成するオブジェクトに識別子を与えて、判定可能にしている。 (is_Rational)
+- テスト作成とエラーハンドリング(最大のものは zero divid関係)をがんばったので、エラー処理やエラーのテストの例としても悪くない。
+- 生成するRationalオブジェクトでadd/sub/mul/divなどをメソッドとして持ち、メソッドチェーンできるようになっている。
+- また、ほぼ同じ処理をクラスのメソッドとしても持っており、そこは数値(整数)、文字列(整数)、BigNum、Rationalを入れて処理もで
+  きるようにしてある。
+
+などもあるので、たとえvitalのモジュールにしないにしても、記述方法の参考にはなるかと。
 
 ## まとめ
 
@@ -105,5 +115,7 @@ Job(vim/neovimのjobの抽象化)とPromiseを利用しています。
 
 ## 注釈
 
-- [^1]: [Vimで任意精度整数演算ができるライブラリを作った - チューリング不完全](https://aomoriringo.hateblo.jp/entry/2015/04/17/143053)
-- [^2]: [vital.vim/BigNum.txt at master · vim-jp/vital.vim](https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/BigNum.txt)
+- [^1]: [vital-Whisky/Job.txt at master · lambdalisue/vital-Whisky](https://github.com/lambdalisue/vital-Whisky/blob/master/doc/Vital/System/Job.txt)
+- [^2]: [vital.vim/Promise.txt at master · vim-jp/vital.vim](https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Async/Promise.txt)
+- [^3]: [Vimで任意精度整数演算ができるライブラリを作った - チューリング不完全](https://aomoriringo.hateblo.jp/entry/2015/04/17/143053)
+- [^4]: [vital.vim/BigNum.txt at master · vim-jp/vital.vim](https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/BigNum.txt)
