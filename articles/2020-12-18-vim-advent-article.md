@@ -21,7 +21,7 @@ published: false
 - <https://github.com/tsuyoshicho/lightline-lsp> 作成
 - <https://github.com/tsuyoshicho/vim-fg> 作成
 - <https://github.com/tsuyoshicho/asdf-vim> 作成
-- <https://github.com/tsuyoshicho/vital-codec> Math.Fraction 作成
+- <https://github.com/tsuyoshicho/vital-codec> Math.Fraction作成
 
 ## 詳細
 
@@ -60,6 +60,5 @@ vim-lspから(一部非公開の関数を使って)lspの状態を取得し、[l
 あまり特別なことはしていないので、キャプチャを載せるにとどめる。
 
  [![lightline-lsp : Image from Gyazo](https://i.gyazo.com/68933419ed2704286cd8d4fe39f2b6f3.png)](https://gyazo.com/68933419ed2704286cd8d4fe39f2b6f3)
-
 
 
