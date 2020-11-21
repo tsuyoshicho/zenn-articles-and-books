@@ -1,4 +1,4 @@
-name: Schedule Merge
+name: Scheduled Merge
 on:
   pull_request:
     types:
@@ -7,12 +7,12 @@ on:
       - synchronize
   schedule:
     - cron: '*/20 * * * *'
-      # Every 20 minutes every hour
+      # At every 20th minute.
 jobs:
-  schedulemerge:
+  scheduledmerge:
     runs-on: ubuntu-latest
     steps:
-      - name: Schedule check
+      - name: Scheduling merge
         uses: gr2m/merge-schedule-action@v1.x
         with:
           merge_method: squash
