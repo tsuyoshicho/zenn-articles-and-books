@@ -3,7 +3,7 @@ title: "今年のVim関係とそれ以外も含めた活動での結果とエッ
 emoji: "🎅"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['vim', 'tips', 'advent']
-published: false
+published: true
 ---
 この記事は[Vim Advent Calendar 2020](https://qiita.com/advent-calendar/2020/vim)の18日目の記事です。
 
