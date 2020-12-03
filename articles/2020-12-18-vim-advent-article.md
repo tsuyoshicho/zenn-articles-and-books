@@ -1,11 +1,14 @@
 ---
-title: "2020 Vim アドベンド day 18: 今年のVim関係とそれ以外も含めた活動のエッセンス"
+title: "今年のVim関係とそれ以外も含めた活動での結果とエッセンス"
 emoji: "🎅"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['vim', 'tips', 'advent']
 published: false
 ---
 この記事は[Vim Advent Calendar 2020](https://qiita.com/advent-calendar/2020/vim)の18日目の記事です。
+
+- 17日目は (あとで) ( xxさん )
+- 18日目は (あとで) ( xxさん ) 
 
 ## 今年のVim活動の総括
 
