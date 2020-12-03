@@ -7,8 +7,8 @@ published: false
 ---
 この記事は[Vim Advent Calendar 2020](https://qiita.com/advent-calendar/2020/vim)の18日目の記事です。
 
-- 17日目は (あとで) ( xxさん )
-- 18日目は (あとで) ( xxさん ) 
+- 17日目は (あとで) ( [hrsh7th@github](https://qiita.com/hrsh7th@github)さん )
+- 18日目は (あとで) ( [yutakatay](https://qiita.com/yutakatay)さん ) 
 
 ## 今年のVim活動の総括
 
