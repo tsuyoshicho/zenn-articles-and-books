@@ -115,9 +115,7 @@ Job(vim/neovimのjobの抽象化)[^1]とPromise[^2]を利用しています。
 当初は記事のネタもなく、「今年は大したことしてないなー」と思ったものだが、案外活動しているようでした。
 これからもいろいろと頑張りたいと思います。
 
-## 注釈
-
-- [^1]: [vital-Whisky/Job.txt at master · lambdalisue/vital-Whisky](https://github.com/lambdalisue/vital-Whisky/blob/master/doc/Vital/System/Job.txt)
-- [^2]: [vital.vim/Promise.txt at master · vim-jp/vital.vim](https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Async/Promise.txt)
-- [^3]: [Vimで任意精度整数演算ができるライブラリを作った - チューリング不完全](https://aomoriringo.hateblo.jp/entry/2015/04/17/143053)
-- [^4]: [vital.vim/BigNum.txt at master · vim-jp/vital.vim](https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/BigNum.txt)
+[^1]: [vital-Whisky/Job.txt at master · lambdalisue/vital-Whisky](https://github.com/lambdalisue/vital-Whisky/blob/master/doc/Vital/System/Job.txt)
+[^2]: [vital.vim/Promise.txt at master · vim-jp/vital.vim](https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Async/Promise.txt)
+[^3]: [Vimで任意精度整数演算ができるライブラリを作った - チューリング不完全](https://aomoriringo.hateblo.jp/entry/2015/04/17/143053)
+[^4]: [vital.vim/BigNum.txt at master · vim-jp/vital.vim](https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/BigNum.txt)
