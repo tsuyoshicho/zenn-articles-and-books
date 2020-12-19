@@ -8,7 +8,7 @@ published: true
 この記事は[Vim Advent Calendar 2020](https://qiita.com/advent-calendar/2020/vim)の18日目の記事です。
 
 - 17日目は [Golang で Vim/neovim 双方で動くセレクタ系のプラグインを作ったときの話](https://qiita.com/hrsh7th@github/items/7430822bf906d2df99c3) ( [hrsh7th@github](https://qiita.com/hrsh7th@github)さん )
-- 19日目は (あとで) ( [yutakatay](https://qiita.com/yutakatay)さん ) 
+- 19日目は [超融合!時空を越えた絆 Neo Vim(VSCode)を試してみた](https://zenn.dev/yutakatay/articles/vscode-neovim) ( [yutakatay](https://qiita.com/yutakatay)/[yutakatay](https://zenn.dev/yutakatay)さん ) 
 
 ## 今年のVim活動の総括
 
