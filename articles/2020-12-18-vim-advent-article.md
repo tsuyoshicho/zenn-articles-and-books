@@ -8,7 +8,7 @@ published: true
 この記事は[Vim Advent Calendar 2020](https://qiita.com/advent-calendar/2020/vim)の18日目の記事です。
 
 - 17日目は [Golang で Vim/neovim 双方で動くセレクタ系のプラグインを作ったときの話](https://qiita.com/hrsh7th@github/items/7430822bf906d2df99c3) ( [hrsh7th@github](https://qiita.com/hrsh7th@github)さん )
-- 19日目は (あとで) ( [yutakatay](https://qiita.com/yutakatay)さん ) 
+- 19日目は [超融合!時空を越えた絆 Neo Vim(VSCode)を試してみた](https://zenn.dev/yutakatay/articles/vscode-neovim) ( [yutakatay](https://qiita.com/yutakatay)/[yutakatay](https://zenn.dev/yutakatay)さん ) 
 
 ## 今年のVim活動の総括
 
@@ -106,8 +106,7 @@ Job(vim/neovimのjobの抽象化)[^1]とPromise[^2]を利用しています。
 - モジュールが生成するオブジェクトに識別子を与えて判定可能にしている。(is_Rational)
 - テスト作成とエラーハンドリング(最大のものはzero divid関係)をがんばったので、エラー処理やエラーのテストの例としても悪くない。
 - 生成するRationalオブジェクトでadd/sub/mul/divなどをメソッドとして持ち、メソッドチェインできるようになっている。
-- また、ほぼ同じ処理をクラスのメソッドとしても持っており、そこは数値(整数)、文字列(整数)、BigNum、Rationalを入れて処理もで
-  きるようにしてある。
+- また、ほぼ同じ処理をクラスのメソッドとしても持っており、そこは数値(整数)、文字列(整数)、BigNum、Rationalを入れて処理もできるようにしてある。
 
 などがあります。たとえvitalのモジュールにしないにしても、Vim scriptでオブジェクトとかそのための記述方法の参考にはなるかと。
 
@@ -116,9 +115,7 @@ Job(vim/neovimのjobの抽象化)[^1]とPromise[^2]を利用しています。
 当初は記事のネタもなく、「今年は大したことしてないなー」と思ったものだが、案外活動しているようでした。
 これからもいろいろと頑張りたいと思います。
 
-## 注釈
-
-- [^1]: [vital-Whisky/Job.txt at master · lambdalisue/vital-Whisky](https://github.com/lambdalisue/vital-Whisky/blob/master/doc/Vital/System/Job.txt)
-- [^2]: [vital.vim/Promise.txt at master · vim-jp/vital.vim](https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Async/Promise.txt)
-- [^3]: [Vimで任意精度整数演算ができるライブラリを作った - チューリング不完全](https://aomoriringo.hateblo.jp/entry/2015/04/17/143053)
-- [^4]: [vital.vim/BigNum.txt at master · vim-jp/vital.vim](https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/BigNum.txt)
+[^1]: [vital-Whisky/Job.txt at master · lambdalisue/vital-Whisky](https://github.com/lambdalisue/vital-Whisky/blob/master/doc/Vital/System/Job.txt)
+[^2]: [vital.vim/Promise.txt at master · vim-jp/vital.vim](https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Async/Promise.txt)
+[^3]: [Vimで任意精度整数演算ができるライブラリを作った - チューリング不完全](https://aomoriringo.hateblo.jp/entry/2015/04/17/143053)
+[^4]: [vital.vim/BigNum.txt at master · vim-jp/vital.vim](https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/BigNum.txt)
