@@ -36,7 +36,7 @@ Composition actionは新しいGitHub Acitonの形態です。
 - Docker Aciton
  
 というのがありました。
-前者は、環境が切り離されたJavaScriopt(node)での処理実行、後者は所定のDockerでの処理実行です。
+前者は、環境が切り離されたJavaScriopt(Node.js)での処理実行、後者は所定のDockerでの処理実行です。
 
 ただ、この処理には不便なことがあり
 
