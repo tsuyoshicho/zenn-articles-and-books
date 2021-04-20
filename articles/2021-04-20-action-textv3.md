@@ -1,9 +1,9 @@
 ---
 title: "GitHub Actions aciton-textlintv3 が出てています"
 emoji: "🐶"
-type: "tech" 
-topics: ['GitHub', 'GitHubActions', 'textlint', 'reviewdog']
-published: false
+type: "tech"
+topics: ["GitHub", "GitHubActions", "textlint", "reviewdog"]
+published: true
 ---
 # action-textlint v3 available
 
