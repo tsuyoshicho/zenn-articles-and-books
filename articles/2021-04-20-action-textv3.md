@@ -43,8 +43,8 @@ Composition actionは新しいGitHub Acitonの形態です。
 - 実行に時間がかかる(仮想的環境の構築)
 - 元環境と条件が変ることがある(Dockerはむしろそれが狙い)
 
-これらについて、開発環境と乖離するのはreviewdog系ではかなり嬉しくない状態でした。
-なので、最近(?)になり、reviewdogプロジェクトが持つActionはCompositionになっています。
+これらについて、開発環境と乖離するのはreviewdog系ではかなりうれしくない状態でした。
+ですので、最近(?)になり、reviewdogプロジェクトが持つActionはCompositionになっています。
 
 Composition Actionはリポジトリの状態のまま、JavaScriptが走る、と考えると分りやすいかと思います。
 
@@ -57,4 +57,3 @@ textlintもこれに倣いました。
 ## epilogue
 
 v3、オススメです。(ただ、安全のため自分の設定で問題ないかと動作の検証はしてください)
-
