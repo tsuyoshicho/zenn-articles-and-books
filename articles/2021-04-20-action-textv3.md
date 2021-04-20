@@ -1,5 +1,5 @@
 ---
-title: "GitHub Actions aciton-textlintv3 でています"
+title: "GitHub Actions aciton-textlintv3 が出てています"
 emoji: "🐶"
 type: "tech" 
 topics: ['GitHub', 'GitHubActions', 'textlint', 'reviewdog']
@@ -7,7 +7,7 @@ published: false
 ---
 # action-textlint v3 available
 
-以前話題にした action-textlint ですが、v3になりました。
+以前話題にしたaction-textlintですが、v3になりました。
 
 [こんな要望](https://zenn.dev/serima/articles/4dac7baf0b9377b0b58b#comment-a9468b580bdbf3)がありましたので、簡単に解説します。
 
@@ -22,13 +22,13 @@ reviewdogプロジェクトのactiionに類似するなら、開発環境のlint
 
 そのため、いろいろ見直した結果
 
-- 実装をDocker actionから Composition action に変換
+- 実装をDocker actionからComposition actionに変換
 - ユーザー環境のtextlintの設定をなるべくそのまま適用
 - ログ出力をモダンに調整
 
 ### Composition action
 
-Composition action は新しいGitHub Acitonの形態です。
+Composition actionは新しいGitHub Acitonの形態です。
 
 いままで、GitHub Actionには
 
@@ -43,10 +43,10 @@ Composition action は新しいGitHub Acitonの形態です。
 - 実行に時間がかかる(仮想的環境の構築)
 - 元環境と条件が変ることがある(Dockerはむしろそれが狙い)
 
-これらについて、開発環境と乖離するのは reviewdog 系ではかなり嬉しくない状態でした。
-なので、最近(?)になり、reviewdogプロジェクトが持つActionは Composition になっています。
+これらについて、開発環境と乖離するのはreviewdog系ではかなり嬉しくない状態でした。
+なので、最近(?)になり、reviewdogプロジェクトが持つActionはCompositionになっています。
 
-Composition Action はリポジトリの状態のまま、JavaScriptが走る、と考えると分りやすいかと思います。
+Composition Actionはリポジトリの状態のまま、JavaScriptが走る、と考えると分りやすいかと思います。
 
 textlintもこれに倣いました。
 
@@ -56,5 +56,5 @@ textlintもこれに倣いました。
 
 ## epilogue
 
-v3、オススメです。(設定と動作の検証はしてください)
+v3、オススメです。(ただ、安全のため自分の設定で問題ないかと動作の検証はしてください)
 
