@@ -30,7 +30,7 @@ reviewdogプロジェクトのactiionに類似するなら、開発環境のlint
 
 Composition actionは新しいGitHub Acitonの形態です。
 
-いままで、GitHub Actionには
+いままで、GitHub Actionsには
 
 - JavaScript Aciton
 - Docker Aciton
