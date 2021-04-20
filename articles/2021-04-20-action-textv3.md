@@ -20,7 +20,7 @@ reviewdogプロジェクトのactiionに類似するなら、開発環境のlint
 
 (このあたり、自分の状態の把握の不足です)
 
-そのため、いろいろ見直した結果
+そのため、いろいろ見直した結果、
 
 - 実装をDocker actionからComposition actionに変換
 - ユーザー環境のtextlintの設定をなるべくそのまま適用
@@ -30,7 +30,7 @@ reviewdogプロジェクトのactiionに類似するなら、開発環境のlint
 
 Composition actionは新しいGitHub Acitonの形態です。
 
-いままで、GitHub Actionsには
+いままで、GitHub Actionsには、
 
 - JavaScript Aciton
 - Docker Aciton
@@ -38,15 +38,15 @@ Composition actionは新しいGitHub Acitonの形態です。
 というのがありました。
 前者は、環境が切り離されたJavaScriopt(Node.js)での処理実行、後者は所定のDockerでの処理実行です。
 
-ただ、この処理には不便なことがあり
+ただ、この処理には不便なことがあり、
 
 - 実行に時間がかかる(仮想的環境の構築)
-- 元環境と条件が変わることがある(Dockerはむしろそれが狙い)
+- 元環境と条件が変わる場合あり(Dockerはむしろそれが狙い)
 
 これらについて、開発環境と乖離するのはreviewdog系ではかなりうれしくない状態でした。
 ですので、最近(?)になり、reviewdogプロジェクトが持つActionはCompositionになっています。
 
-Composition Actionはリポジトリの状態のまま、JavaScriptが走る、と考えると分りやすいかと思います。
+Composition Actionはリポジトリの状態のままJavaScriptが走る、と考えるのが分りやすいかと思います。
 
 textlintもこれに倣いました。
 
