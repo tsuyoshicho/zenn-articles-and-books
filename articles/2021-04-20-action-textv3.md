@@ -1,5 +1,5 @@
 ---
-title: "GitHub Actions aciton-textlintv3 が出てています"
+title: "GitHub Actions aciton-textlint v3 が出てています"
 emoji: "🐶"
 type: "tech"
 topics: ["GitHub", "GitHubActions", "textlint", "reviewdog"]
