@@ -8,6 +8,7 @@ published: false
 # Google Fitの利用と同期
 
 ## 動機
+
 自分は健康管理の一環で、毎日血圧を測っています。
 いままでは紙管理でしたが、Google Fit上にも登録を始めました。
 
@@ -15,7 +16,7 @@ published: false
 ビスを利用して登録したく探したところ、FitnessSyncerが悪くないのではと
 なり利用しています。
 
-##  [FitnessSyncer](https://www.fitnesssyncer.com/)
+## [FitnessSyncer](https://www.fitnesssyncer.com/)
 
 特徴があるわけではないですが、無料で利用できて別ソース(今回はGoogle
 Drive上のCSVファイル)からGoogle Fitへデータが流せるみたいなので利用し
