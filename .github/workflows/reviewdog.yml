@@ -41,3 +41,33 @@ jobs:
           reporter: ${{ steps.reporter.outputs.value }}
           level: info
           textlint_flags: "books/**"
+
+  markdownlint:
+    name: runner / markdownlint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Select reporter
+        uses: haya14busa/action-cond@v1
+        id: reporter
+        with:
+          cond: ${{ github.event_name == 'pull_request' }}
+          if_true: "github-pr-review"
+          if_false: "github-check"
+      - name: Lint markdownlint (articles)
+        uses: tsuyoshicho/action-markdownlint@develop
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: ${{ steps.reporter.outputs.value }}
+          level: info
+          markdownlint_flags: "./articles"
+      - name: Lint markdownlint (books)
+        uses: tsuyoshicho/action-markdownlint@develop
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: ${{ steps.reporter.outputs.value }}
+          level: info
+          markdownlint_flags: "./books"
