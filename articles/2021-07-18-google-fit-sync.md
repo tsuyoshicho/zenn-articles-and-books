@@ -6,6 +6,7 @@ topics: ["fitness", "google"]
 published: false
 ---
 # Google Fitの利用と同期
+
 ## 動機
 自分は健康管理の一環で、毎日血圧を測っています。
 いままでは紙管理でしたが、Google Fit上にも登録を始めました。
