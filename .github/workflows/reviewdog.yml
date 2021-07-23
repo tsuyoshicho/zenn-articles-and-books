@@ -58,14 +58,14 @@ jobs:
           if_true: "github-pr-review"
           if_false: "github-check"
       - name: Lint markdownlint (articles)
-        uses: tsuyoshicho/action-markdownlint@develop
+        uses: reviewdog/action-markdownlint@v0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: ${{ steps.reporter.outputs.value }}
           level: info
           markdownlint_flags: "./articles"
       - name: Lint markdownlint (books)
-        uses: tsuyoshicho/action-markdownlint@develop
+        uses: reviewdog/action-markdownlint@v0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: ${{ steps.reporter.outputs.value }}
