@@ -27,13 +27,13 @@ Google Drive上のCSVファイルからの入力で、FitnessSyncerに血圧の�
 
 外部からの入力
 
-- アクティビティ 入力 Google Fit : 出力 FitnessSyncer : 日々のスマートフォンでの歩数自動測定入力の同期
-- 血圧 入力 Google Fit : 出力 FitnessSyncer : 日々のスマートフォンでの手動入力の同期
+- アクティビティ : 入力 Google Fit : 出力 FitnessSyncer : 日々のスマートフォンでの歩数カウントの同期
+- 血圧 : 入力 Google Fit : 出力 FitnessSyncer : 日々のスマートフォンでの手動入力の同期
  
 外部への出力
 
-- 血圧 入力 FitnessSyncer : 出力 Google Drive CSV ファイル : 血圧情報の結果バックアップ
-- 身体測定結果 入力 FitnessSyncer : 出力 Google Fit : 身長体重など、定期もしくは不定期に測定した結果を FitnessSyncer Notebookから入力して同期
+- 血圧 : 入力 FitnessSyncer : 出力 Google Drive CSV ファイル : 血圧情報の結果バックアップ
+- 身体情報 : 入力 FitnessSyncer : 出力 Google Fit : 身長体重など、定期もしくは不定期に測定した結果を FitnessSyncer Notebookから入力して同期
 
 正直もっとよいサービスがあれば変更するのもよいかなと思っている程度です。
 ちょっとした情報として記事にしました。
