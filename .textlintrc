@@ -23,8 +23,9 @@
       "no-doubled-conjunctive-particle-ga": true
     },
     "preset-ja-spacing": {
-      "ja-no-space-between-full-width": false
-    },
+      "ja-space-between-half-and-full-width": false,
+      "ja-no-space-around-parentheses": false
+    }
   },
   "filters": {
     "allowlist": {
