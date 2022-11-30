@@ -138,7 +138,7 @@ Vimの辞書はほかの言語でいうところの連想配列みたいなも�
 `asyncomplete.vim` では補完ソースが呼ばれるとき、補完時の文字を自前で確認できます。
 ここで不一致なら空の終了とすることで高速化されているわけです。
 
-この処理の所を、初期は `\w+` としていたのですが、`mr.vim` が扱うのはパスですので、これはあまり適切ではないものでした。
+この処理の所を初期は `\w+` としていましたが、`mr.vim` がパスを取り扱うので、これはあまり適切ではないものでした。
 ここを `\f*` としました(一文字は必須でもよかったかも)。
 こちらはVimの `isfname` というオプション依存ながら、パスに使う文字列が適合するので、より適切です。
 これにより `:` や `/` や `\` でもマッチします。
@@ -203,4 +203,3 @@ endfunction
 [^5]: [asyncomplete-tags.vim](https://github.com/prabirshrestha/asyncomplete-tags.vim)
 [^6]: [asyncomplete-dictionary](https://github.com/yuki-yano/asyncomplete-dictionary)
 [^7]: [Don't repeat yourself - Wikipedia](https://ja.wikipedia.org/wiki/Don%27t_repeat_yourself)
-
