@@ -2,9 +2,9 @@
 title: "Vim Advent記念 Vim Plugin作成RTA"
 emoji: "⏱"
 type: "tech"
-topics: ['vim', 'advent']
+topics: ["vim", "advent"]
 published: true
-published_at: 2022-12-08 09:00
+published_at: "2022-12-08 09:00"
 ---
 この記事は[Vim Advent Calendar 2022 (part 2)](https://qiita.com/advent-calendar/2022/vim)の8日目の記事です。
 
