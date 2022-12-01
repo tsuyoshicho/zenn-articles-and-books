@@ -214,8 +214,6 @@ endfunction
 
 `mr.vim` / `asyncomplete.vim` にのっかるだけだったので技術的な難易度はありませんが、 構築、修正という意味でやりがいあるものでした。
 
-## Footnote
-
 [^1]: [asyncomplete-mr.vim](https://github.com/tsuyoshicho/asyncomplete-mr.vim)
 [^2]: [キャッシュアルゴリズム - Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0)
 [^3]: [Vimにたくさんあるファジーファインダー系プラグインを比較してみる](https://zenn.dev/yutakatay/articles/vim-fuzzy-finder)
