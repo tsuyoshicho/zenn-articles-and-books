@@ -164,7 +164,7 @@ Vimの辞書はほかの言語でいうところの連想配列みたいなも�
 
 mrrの実装。
 
-https://github.com/tsuyoshicho/asyncomplete-mr.vim/blob/master/autoload/asyncomplete/sources/mrr.vim
+https://github.com/tsuyoshicho/asyncomplete-mr.vim/blob/a924ef0612d5f6e98cdb6e2045706ab0ea3f2018/autoload/asyncomplete/sources/mrr.vim#L7-L15
 
 `asyncomplete.vim` のエントリの関数を用意しています。
 処理の本体は共通処理に一任。
@@ -172,7 +172,7 @@ https://github.com/tsuyoshicho/asyncomplete-mr.vim/blob/master/autoload/asyncomp
 
 こちらは共通処理。
 
-https://github.com/tsuyoshicho/asyncomplete-mr.vim/blob/master/autoload/asyncomplete/mr/util.vim
+https://github.com/tsuyoshicho/asyncomplete-mr.vim/blob/a924ef0612d5f6e98cdb6e2045706ab0ea3f2018/autoload/asyncomplete/mr/util.vim#L7-L23
 
 共通の処理として:
 
