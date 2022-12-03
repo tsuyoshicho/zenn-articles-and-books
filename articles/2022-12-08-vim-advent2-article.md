@@ -6,10 +6,14 @@ topics: ["vim", "advent"]
 published: true
 published_at: "2022-12-08 09:00"
 ---
+:::message
+
 この記事は[Vim Advent Calendar 2022 (part 2)](https://qiita.com/advent-calendar/2022/vim)の8日目の記事です。
 
 - 7日目は (未確定) です。
 - 9日目は (未確定) です。
+ 
+:::
 
 # Vim Advent記念 Vim Plugin作成RTA
 
@@ -83,7 +87,8 @@ Vimは補完として基本の補完やomni補完、ほかに類語辞書での�
 
 さて作ると考えましたが、どんなことをやったのか、なるべく生のままの結果を出します。(コミット順は多少前後する)
 
-なお、プラグインのコミットはsquash mergeしたこともあり、 initial commit -> setup commit (merge) と2つしかない状態だったりしますw。
+なお、このプラグイン完成の報告時コミット数については、squash mergeしたこともあり initial commit -> setup commit (merge) と2つしかない状態だったりしました。
+現在はREADMEの微調整、ファイル移動などでもうちょっと増えましたが。
 
 ### リポジトリとプラグインの枠組み作成
 
@@ -159,17 +164,7 @@ Vimの辞書はほかの言語でいうところの連想配列みたいなも�
 
 mrrの実装。
 
-```vim
-scriptencoding utf-8
-
-function! asyncomplete#sources#mrr#completor(opt, ctx) abort
-  call asyncomplete#sources#mr#util#completor_helper(a:opt, a:ctx, 'mrr', mr#mrr#list())
-endfunction
-
-function! asyncomplete#sources#mrr#get_source_options(opts) abort
-  return extend(extend({}, a:opts), {})
-endfunction
-```
+https://github.com/tsuyoshicho/asyncomplete-mr.vim/blob/master/autoload/asyncomplete/sources/mrr.vim
 
 `asyncomplete.vim` のエントリの関数を用意しています。
 処理の本体は共通処理に一任。
@@ -177,25 +172,7 @@ endfunction
 
 こちらは共通処理。
 
-```vim
-scriptencoding utf-8
-
-function! asyncomplete#sources#mr#util#completor_helper(opt, ctx, name, list) abort
-  let l:typed = a:ctx['typed']
-  let l:col = a:ctx['col']
-
-  let l:kw = matchstr(l:typed, '\f*$')
-  let l:kwlen = len(l:kw)
-  let l:startcol = l:col - l:kwlen
-
-  let l:cache = a:list
-
-  call filter(l:cache, {idx, v -> match(v, '\c^' . escape(l:kw, '\')) != -1})
-  call map(l:cache, {idx, v -> {'dup' : 1, 'icase' : 1, 'menu' : '[' .. a:name .. ']', 'word': v}})
-
-  call asyncomplete#complete(a:opt['name'], a:ctx, l:startcol, l:cache)
-endfunction
-```
+https://github.com/tsuyoshicho/asyncomplete-mr.vim/blob/master/autoload/asyncomplete/mr/util.vim
 
 共通の処理として:
 
