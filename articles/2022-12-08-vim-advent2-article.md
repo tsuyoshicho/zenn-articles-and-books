@@ -5,6 +5,7 @@ type: "tech"
 topics: ["vim", "advent"]
 published: true
 published_at: "2022-12-08 09:00"
+publication_name: "vim_jp"
 ---
 :::message
 
