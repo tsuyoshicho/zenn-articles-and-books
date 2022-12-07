@@ -11,8 +11,8 @@ publication_name: "vim_jp"
 
 この記事は[Vim Advent Calendar 2022 (part 2)](https://qiita.com/advent-calendar/2022/vim)の8日目の記事です。
 
-- 7日目は (未確定) です。
-- 9日目は (未確定) です。
+- 7日目は [Neovim：1..2ヶ月前の自分に伝えたかったプラグイン達](https://zenn.dev/mnonamer/articles/18fdc9ebf6c820) ([sevenc-nanashi](https://qiita.com/sevenc-nanashi)/[mnonamer](https://zenn.dev/mnonamer)さん) です。
+- 9日目は [Neovimで電卓](https://zenn.dev/rapan931/articles/20221209-dentaku-nvim) ([rapan931](https://qiita.com/rapan931)/[rapan931](https://zenn.dev/rapan931)さん) です。
  
 :::
 
