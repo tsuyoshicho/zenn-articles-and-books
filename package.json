@@ -28,7 +28,7 @@
   "homepage": "https://github.com/tsuyoshicho/zenn-articles-and-books#readme",
   "devDependencies": {
     "@proofdict/textlint-rule-proofdict": "^3.1.1",
-    "@textlint/textlint-plugin-markdown": "^12.0.0",
+    "@textlint/textlint-plugin-markdown": "^13.0.0",
     "textlint": "^12.0.0",
     "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-plugin-html": "^0.3.0",
