@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 2
       - name: Create published=true pull-request
-        uses: korosuke613/zenn-metadata-updater-action@v1
+        uses: korosuke613/zenn-metadata-updater-action@v2
         with:
           published: true
           force-push: true
