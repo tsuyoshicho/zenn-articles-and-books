@@ -29,7 +29,7 @@
   "devDependencies": {
     "@proofdict/textlint-rule-proofdict": "^3.1.1",
     "@textlint/textlint-plugin-markdown": "^13.0.0",
-    "textlint": "^13.0.0",
+    "textlint": "^14.0.0",
     "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-plugin-html": "^1.0.0",
     "textlint-rule-preset-ja-spacing": "^2.0.2",
