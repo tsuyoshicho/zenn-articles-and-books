@@ -11,11 +11,11 @@ jobs:
     if: github.event.pull_request.merged == true
     steps:
       - name: Checkout with merge commit and previous commit
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           fetch-depth: 2
       - name: Create published=true pull-request
-        uses: korosuke613/zenn-metadata-updater-action@v3.0.3
+        uses: korosuke613/zenn-metadata-updater-action@eb30e43ce6575fbba4420bb8653d4c266abb26fb # v3.0.3
         with:
           published: true
           force-push: true
