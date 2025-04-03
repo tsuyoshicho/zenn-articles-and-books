@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Scheduling merge
-        uses: gr2m/merge-schedule-action@a9ba409bd981f1953dad4681a800769a5797e342 # v2.6.2
+        uses: gr2m/merge-schedule-action@fb456f7b7238899f6e37daa2329c20c558946794 # v2.6.3
         with:
           merge_method: squash
             # merge, squash or rebase.
