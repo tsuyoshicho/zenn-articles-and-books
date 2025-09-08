@@ -1,10 +1,10 @@
 ---
 title: "Gitのコミットメッセージ上の種別を簡単に変更する"
 emoji: "📜"
-type: "tech" # tech: 技術記事 / idea: アイデア
+type: "tech"
 topics: ["git", "vim"]
-published: false
-published_at: 2025-09-15 00:00 # need published: true
+published: true
+published_at: "2025-09-15 00:00"
 publication_name: "vim_jp"
 ---
 
