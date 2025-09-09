@@ -1,8 +1,10 @@
 ---
-title: "Zennでのコンテンツ管理でのトラブル事例"
+title: Zennでのコンテンツ管理でのトラブル事例
 emoji: 🤔
-type: "tech"
-topics: ["Zenn", "GitHub"]
+type: tech
+topics:
+  - Zenn
+  - GitHub
 published: true
 ---
 
