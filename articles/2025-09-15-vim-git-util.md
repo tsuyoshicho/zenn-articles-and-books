@@ -11,7 +11,7 @@ publication_name: "vim_jp"
 この記事は Vim 駅伝の 2025-09-15 の記事です。
 前回の記事は [kawarimidoll](https://zenn.dev/kawarimidoll) さんの「[Neovim luaのlsとしてemmyluaを使ってみる](https://zenn.dev/vim_jp/articles/56bc5db545f47b)」でした。
 
-Vim 駅伝は常に参加者を募集しています。詳しくは[こちら](https://vim-jp.org/ekiden/about/)のページをご覧ください。
+Vim 駅伝は常に参加者を募集しています。詳しくは[こちらのページ](https://vim-jp.org/ekiden/about/)をご覧ください。
 
 # Gitのコミットメッセージ上の種別を簡単に変更する
 
