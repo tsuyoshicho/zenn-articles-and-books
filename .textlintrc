@@ -1,8 +1,7 @@
 {
   "plugins": {
-    "@textlint/markdown": {
-      "extensions": [".markdown", ".mdown", ".mkdn", ".mkd", ".md"]
-    }
+    "@textlint/markdown": true,
+    "html": true
   },
   "rules": {
     "@proofdict/proofdict": {
@@ -11,7 +10,6 @@
     "prh": {
       "rulePaths": ["./dict/prh.yml"]
     },
-    "preset-japanese": false,
     "preset-ja-technical-writing": {
       "sentence-length": false,
       "max-ten": {
@@ -25,9 +23,10 @@
       "no-doubled-conjunctive-particle-ga": true
     },
     "preset-ja-spacing": {
-      "ja-no-space-between-full-width": false
-    },
-    "general-novel-style-ja": false
+      "ja-no-space-between-full-width": false,
+      "ja-space-between-half-and-full-width": false,
+      "ja-no-space-around-parentheses": false
+    }
   },
   "filters": {
     "allowlist": {

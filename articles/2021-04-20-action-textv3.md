@@ -1,5 +1,5 @@
 ---
-title: "GitHub Actions aciton-textlintv3 が出てています"
+title: "GitHub Actions aciton-textlint v3 が出てています"
 emoji: "🐶"
 type: "tech"
 topics: ["GitHub", "GitHubActions", "textlint", "reviewdog"]
@@ -44,9 +44,9 @@ Composition actionは新しいGitHub Acitonの形態です。
 - 元環境と条件が変わる場合あり(Dockerはむしろそれが狙い)
 
 これらについて、開発環境と乖離するのはreviewdog系ではかなりうれしくない状態でした。
-ですので、最近(?)になり、reviewdogプロジェクトが持つActionはCompositionになっています。
+ですので、最近(?)でのreviewdogプロジェクトが持つActionはCompositionになっています。
 
-Composition Actionはリポジトリの状態のままJavaScriptが走る、と考えるのが分りやすいかと思います。
+Composition Actionはリポジトリの状態のままシェルスクリプトが走る、と考えるのが分りやすいかと思います。
 
 textlintもこれに倣いました。
 
