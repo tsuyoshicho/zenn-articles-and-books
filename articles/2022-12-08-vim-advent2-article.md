@@ -1,11 +1,13 @@
 ---
-title: "Vim Advent記念 Vim Plugin作成RTA"
+title: Vim Advent記念 Vim Plugin作成RTA
 emoji: ⏱
-type: "tech"
-topics: ["vim", "advent"]
+type: tech
+topics:
+  - vim
+  - advent
 published: true
-published_at: "2022-12-08 09:00"
-publication_name: "vim_jp"
+published_at: 2022-12-08 09:00
+publication_name: vim_jp
 ---
 :::message
 
