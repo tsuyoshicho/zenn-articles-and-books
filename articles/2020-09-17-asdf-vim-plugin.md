@@ -1,8 +1,10 @@
 ---
 title: "asdf プラグインの作成 : Vimの場合"
 emoji: 🛠
-type: "tech"
-topics: ["vim", "asdf"]
+type: tech
+topics:
+  - vim
+  - asdf
 published: true
 ---
 
