@@ -1,6 +1,6 @@
 ---
 title: "GitHub Actions textlint ツールでの reviewdog キャッチアップ : 修正サジェスト"
-emoji: "🐶"
+emoji: 🐶
 type: "tech" 
 topics: ['GitHub', 'GitHubActions', 'textlint', 'reviewdog']
 published: true

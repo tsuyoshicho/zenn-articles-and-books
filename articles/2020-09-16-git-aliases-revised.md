@@ -1,7 +1,7 @@
 ---
 title: "Gitのaliasを晒す revised"
-emoji: "🐧"
-type: "tech" # tech: 技術記事 / idea: アイデア
+emoji: 🐧
+type: "tech"
 topics: ["git"]
 published: true
 ---

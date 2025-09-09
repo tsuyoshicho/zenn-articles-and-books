@@ -1,6 +1,6 @@
 ---
 title: "Vim Advent記念 Vim Plugin作成RTA"
-emoji: "⏱"
+emoji: ⏱
 type: "tech"
 topics: ["vim", "advent"]
 published: true

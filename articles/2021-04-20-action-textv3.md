@@ -1,6 +1,6 @@
 ---
 title: "GitHub Actions aciton-textlint v3 が出てています"
-emoji: "🐶"
+emoji: 🐶
 type: "tech"
 topics: ["GitHub", "GitHubActions", "textlint", "reviewdog"]
 published: true
