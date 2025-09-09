@@ -1,8 +1,9 @@
 ---
-title: "Gitのaliasを晒す revised"
+title: Gitのaliasを晒す revised
 emoji: 🐧
-type: "tech"
-topics: ["git"]
+type: tech
+topics:
+  - git
 published: true
 ---
 
