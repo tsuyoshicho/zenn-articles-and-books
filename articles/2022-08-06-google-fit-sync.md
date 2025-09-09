@@ -1,6 +1,6 @@
 ---
 title: "Google Fitと連携するサービスを利用してみる : 事例 FitnessSyncer"
-emoji: "💬"
+emoji: 💬
 type: "tech"
 topics: ["fitness", "google"]
 published: true

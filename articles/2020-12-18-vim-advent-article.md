@@ -1,7 +1,7 @@
 ---
 title: "今年のVim関係とそれ以外も含めた活動での結果とエッセンス"
-emoji: "🎅"
-type: "tech" # tech: 技術記事 / idea: アイデア
+emoji: 🎅
+type: "tech"
 topics: ['vim', 'tips', 'advent']
 published: true
 ---
