@@ -1,11 +1,13 @@
 ---
-title: "Gitのコミットメッセージ上の種別を簡単に変更する"
-emoji: "📜"
-type: "tech"
-topics: ["git", "vim"]
+title: Gitのコミットメッセージ上の種別を簡単に変更する
+emoji: 📜
+type: tech
+topics:
+  - git
+  - vim
 published: true
-published_at: "2025-09-15 00:00"
-publication_name: "vim_jp"
+published_at: 2025-09-15 00:00
+publication_name: vim_jp
 ---
 
 この記事は Vim 駅伝の 2025-09-15 の記事です。
