@@ -1,8 +1,12 @@
 ---
 title: "GitHub Copilotを使う (事例: git のエイリアスの改善)"
-emoji: "🤖"
-type: "tech"
-topics: ["githubcopilot", "git", "vscode", "agent"]
+emoji: 🤖
+type: tech
+topics:
+  - githubcopilot
+  - git
+  - vscode
+  - agent
 published: true
 published_at: 2026-02-01 00:00
 ---
