@@ -55,7 +55,7 @@ action-textlintはtextlintの結果をreviewdogというツールを利用して
 
 これも先日ですが、Node.js 15およびそれに同梱のnpm 7がリリースされています。
 
-これ自体はGitHub Actionsとは直接は関係しませんが(環境が固定的(ubuntu-latestが[20.04](https://github.blog/changelog/2020-10-29-github-actions-ubuntu-latest-workflows-will-use-ubuntu-20-04/)になりますが)ですので、意図して使わなければ使うことがない)、その中に
+これ自体はGitHub Actionsとは直接は関係しませんが(環境が固定的( "ubuntu-latest" が[20.04](https://github.blog/changelog/2020-10-29-github-actions-ubuntu-latest-workflows-will-use-ubuntu-20-04/)になりますが)ですので、意図して使わなければ使うことがない)、その中に
 
 > その他、npxでの破壊的変更
 
@@ -89,7 +89,7 @@ reviewdogへ与えるパラメータについて、これらと同等に設定�
 
 ### Hello suggestion
 
-そして目玉ですが、textlintが提供する自動修正の結果に基づいて、PRでのサジェストとして出す機能を入れています。
+そして目玉ですが、textlintが提供する自動修正の結果にもとづいて、PRでのサジェストとして出す機能を入れています。
 これはreviewdogチームが提供している汎用の差分サジェストサポートaction、[reviewdog/action-suggester](https://github.com/reviewdog/action-suggester)を参考にして出すようにしました。
 
 実行例:

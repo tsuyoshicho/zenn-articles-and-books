@@ -7,6 +7,7 @@ topics:
   - git
   - vscode
   - agent
+  - vibecoding
 published: true
 published_at: 2026-02-01 00:00
 ---
