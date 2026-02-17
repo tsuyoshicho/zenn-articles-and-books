@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilotを使う (事例: git のエイリアスの改善)'
+title: "GitHub Copilotを使う (事例: git のエイリアスの改善)"
 emoji: 🤖
 type: tech
 topics:
