@@ -58,14 +58,14 @@ jobs:
           if_true: "github-pr-review"
           if_false: "github-check"
       - name: Lint markdownlint (articles)
-        uses: reviewdog/action-markdownlint@d7862f0a8dbbee78e016f527260747a4f2bb2a64 # v0.30.0
+        uses: reviewdog/action-markdownlint@a223028b797326efe9d3c9b55e24d740480c3352 # v0.31.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: ${{ steps.reporter.outputs.value }}
           level: info
           markdownlint_flags: "./articles"
       - name: Lint markdownlint (books)
-        uses: reviewdog/action-markdownlint@d7862f0a8dbbee78e016f527260747a4f2bb2a64 # v0.30.0
+        uses: reviewdog/action-markdownlint@a223028b797326efe9d3c9b55e24d740480c3352 # v0.31.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: ${{ steps.reporter.outputs.value }}
